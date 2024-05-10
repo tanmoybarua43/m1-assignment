@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Pet Adoption Service</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="./images/banner.jpg" alt="Banner Image" width="1000">
+        <h1>Pet Adoption Service</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>Contact Us</h2>
+        <form>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="">How should we conatact you?</label> <br>
+                <input type="radio" name="preference" value="Email" id="preference_email">
+                <label for="preference_email">Email</label>
+                <input type="radio" name="preference" value="Phone" id="preference_phone">
+                <label for="preference_phone">Phone</label> <br>
+                <label for="inquery">Which are you inquiring?</label> <br>
+                <select name="inquery" id="inquery">
+                    <option value="West Cliff">Dog query</option>
+                    <option value="North Cliff">Cat query</option>
+                    <option value="East Cliff">Other pet</option>
+                </select><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message"></textarea><br>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2022 Pet Adoption Service</p>
+    </footer>
+</body>
+</html>
