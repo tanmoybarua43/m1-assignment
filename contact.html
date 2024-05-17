@@ -24,23 +24,25 @@
         <form>
             <fieldset>
                 <legend>Contact Information</legend>
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name"><br>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email"><br>
-                <label for="">How should we conatact you?</label> <br>
-                <input type="radio" name="preference" value="Email" id="preference_email">
-                <label for="preference_email">Email</label>
-                <input type="radio" name="preference" value="Phone" id="preference_phone">
-                <label for="preference_phone">Phone</label> <br>
-                <label for="inquery">Which are you inquiring?</label> <br>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="">How should we conatact you?</label> 
+                <div class="form-flex">
+                    <input type="radio" name="preference" value="Email" id="preference_email">
+                    <label for="preference_email">Email</label>
+                    <input type="radio" name="preference" value="Phone" id="preference_phone">
+                    <label for="preference_phone">Phone</label> 
+                </div>
+                <label for="inquery">Which are you inquiring?</label> 
                 <select name="inquery" id="inquery">
                     <option value="West Cliff">Dog query</option>
                     <option value="North Cliff">Cat query</option>
                     <option value="East Cliff">Other pet</option>
-                </select><br>
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message"></textarea><br>
+                </select>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
                 <input type="submit" value="Submit">
             </fieldset>
         </form>
