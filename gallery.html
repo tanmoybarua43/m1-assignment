@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Pet Adoption Service</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Pet Adoption Service</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <img src="./images/banner.jpg" alt="Banner Image" width="1000">
+    </header>
+
+    <main>
+        <h1>Gallery</h1>
+        <ul id="gallery"></ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2022 Pet Adoption Service</p>
+    </footer>
+    <script>
+        var photoSrcs = [
+            './images/p1.jpeg', './images/p2.jpeg', './images/p3.jpeg', './images/p4.jpeg', './images/p5.jpeg',
+            './images/p6.jpeg', './images/p7.jpeg', './images/p8.jpeg', './images/p9.jpeg', './images/p10.jpeg' 
+       ];
+
+       var captions = [
+    'Adorable Puppy', 'Golden Retriever by the Pool', 'Golden Retriever', 'Dachshunds Resting', 'Curious Puppy',
+    'Orange Tabby Cat', 'Striped Cat', 'Kitten with Flowers', 'Gray Cat', 'Cat with Red Flower'
+];
+
+var descriptions = [
+    'A tiny black and tan puppy sitting on a light-colored floor, looking adorable.', 'A golden retriever walking happily next to a pool, enjoying the sunny day.', 
+    'A cheerful golden retriever sitting indoors, looking directly at the camera.', 'Two dachshunds relaxing on a couch, one sitting up and the other lying down.', 
+    'A gray puppy with blue eyes looking curiously at the camera in a dimly lit room.', 'An orange tabby cat sitting on a windowsill, looking outside with interest.', 
+    'A striped cat with striking green eyes staring intensely at the camera.', 'A fluffy white kitten being held, adorned with a floral collar.', 
+    'A gray cat sitting on grass, with sunlight illuminating its fur.', 'A long-haired cat with a red flower by its side, looking pensively into the distance.'
+];
+
+        var gallery = document.getElementById('gallery');
+
+        for (var i = 0; i < photoSrcs.length; i++) {
+            var listItem = document.createElement('li');
+            listItem.id = 'photo' + (i + 1);
+            listItem.className = 'photo';
+
+            var img = document.createElement('img');
+            img.src = photoSrcs[i];
+            img.alt = captions[i];
+
+            var caption = document.createElement('div');
+            caption.className = 'caption';
+            caption.textContent = captions[i];
+
+            var description = document.createElement('div');
+            description.className = 'description';
+            description.textContent = descriptions[i];
+
+            listItem.appendChild(img);
+            listItem.appendChild(caption);
+            listItem.appendChild(description);
+            gallery.appendChild(listItem);
+        }
+
+    </script>
+</body>
+
+</html>
