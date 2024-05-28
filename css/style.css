@@ -204,3 +204,45 @@ th {
     background-color: #5cb85c;
     color: white;
 }
+
+/* gallery page */
+.photo {
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+}
+
+.photo img {
+    width: 200px;
+    height: 200px;
+    display: block;
+}
+
+.caption {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 190px;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+.photo:hover .description {
+    visibility: visible;
+    opacity: 1;
+}
+
+.photo:hover {
+    cursor: pointer;
+}
