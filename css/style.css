@@ -246,3 +246,39 @@ th {
 .photo:hover {
     cursor: pointer;
 }
+
+.info-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 1000;
+    text-align: center;
+}
+
+.info-box h2 {
+    margin-top: 0;
+}
+
+.info-box button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #3ec72f;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* .info-box button:hover {
+    background-color: #d32f2f;
+} */
+
+
+
+
+
