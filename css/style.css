@@ -155,6 +155,7 @@ form label {
 
 form input[type="text"],
 form input[type="email"],
+form input[type="tel"],
 form select,
 form textarea {
     width: 100%;
