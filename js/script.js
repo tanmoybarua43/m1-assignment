@@ -56,3 +56,24 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+
+document.addEventListener('DOMContentLoaded', function() {
+    var contactChoice = document.getElementById('contactChoice');
+    var emailContainer = document.getElementById('emailContainer');
+    var phoneContainer = document.getElementById('phoneContainer');
+
+    contactChoice.addEventListener('change', function() {
+        if (contactChoice.value === "Email") {
+            emailContainer.style.display = 'block';
+            phoneContainer.style.display = 'none';
+        } else if (contactChoice.value === "Phone") {
+            emailContainer.style.display = 'none';
+            phoneContainer.style.display = 'block';
+        } else {
+            emailContainer.style.display = 'none';
+            phoneContainer.style.display = 'none';
+        }
+    });
+});
+
+
