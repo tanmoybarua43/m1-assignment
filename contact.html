@@ -29,19 +29,31 @@
                 <input type="text" id="name" name="name">
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email">
-                <label for="">How should we conatact you?</label> 
-                <div class="form-flex">
-                    <input type="radio" name="preference" value="Email" id="preference_email">
-                    <label for="preference_email">Email</label>
-                    <input type="radio" name="preference" value="Phone" id="preference_phone">
-                    <label for="preference_phone">Phone</label> 
-                </div>
-                <label for="inquery">Which are you inquiring?</label> 
-                <select name="inquery" id="inquery">
-                    <option value="West Cliff">Dog query</option>
-                    <option value="North Cliff">Cat query</option>
-                    <option value="East Cliff">Other pet</option>
+                
+                <label for="contactChoice">How should we contact you?</label>
+                <select id="contactChoice">
+                    <option value="">Please select</option>
+                    <option value="Email">Email</option>
+                    <option value="Phone">Phone</option>
                 </select>
+                
+                <div id="emailContainer" style="display:none;">
+                    <label for="contactEmail">Enter your email:</label>
+                    <input type="email" id="contactEmail" name="contactEmail">
+                </div>
+                
+                <div id="phoneContainer" style="display:none;">
+                    <label for="contactPhone">Enter your phone number:</label>
+                    <input type="tel" id="contactPhone" name="contactPhone">
+                </div>
+
+                <label for="inquiry">Which are you inquiring?</label>
+                <select name="inquiry" id="inquiry">
+                    <option value="Dog">Dog query</option>
+                    <option value="Cat">Cat query</option>
+                    <option value="Other">Other pet</option>
+                </select>
+                
                 <label for="message">Message:</label>
                 <textarea id="message" name="message"></textarea>
                 <input type="submit" value="Submit">
@@ -52,5 +64,6 @@
     <footer>
         <p>&copy; 2022 Pet Adoption Service</p>
     </footer>
+    <script src="./js/script.js"></script>
 </body>
 </html>
