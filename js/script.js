@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
         gallery.appendChild(listItem);
 
         listItem.addEventListener('click', function() {
-            infoBox.innerHTML = '<h2>' + captions[index] + '</h2><p>' + descriptions[index] + '</p><button onclick="closeInfoBox()">Close</button>';
+            infoBox.innerHTML = '<img src='+ photoSrcs[index] +' width="300px">'+'<h2>' + captions[index] + '</h2><p>' + descriptions[index] + '</p><button onclick="closeInfoBox()">Close</button>';
             infoBox.style.display = 'block';
         });
     });
